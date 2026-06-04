@@ -23,7 +23,6 @@
   body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
   a { color: var(--blue); text-decoration: none; }
 
-  /* NAV */
   nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: white; z-index: 100; }
   .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.2rem; color: var(--text); }
   .logo-icon { width: 36px; height: 36px; background: var(--blue); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
@@ -31,7 +30,6 @@
   .nav-cta { background: var(--blue); color: white; padding: 0.5rem 1.25rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
   .nav-cta:hover { background: var(--blue-dark); color: white; }
 
-  /* HERO */
   .hero { text-align: center; padding: 5rem 2rem 4rem; background: linear-gradient(180deg, #E6F1FB 0%, #ffffff 100%); }
   .hero-badge { display: inline-block; background: var(--blue-light); color: var(--blue-dark); font-size: 0.8rem; font-weight: 600; padding: 0.3rem 1rem; border-radius: 20px; margin-bottom: 1.5rem; letter-spacing: 0.05em; text-transform: uppercase; }
   .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.15; max-width: 700px; margin: 0 auto 1.25rem; color: var(--text); }
@@ -43,7 +41,6 @@
   .btn-secondary { background: white; color: var(--text); padding: 0.85rem 2rem; border-radius: 10px; font-weight: 600; font-size: 1rem; border: 1.5px solid var(--border); transition: border-color 0.2s; display: inline-block; }
   .btn-secondary:hover { border-color: var(--blue); color: var(--blue); }
 
-  /* MOCKUP */
   .mockup { max-width: 900px; margin: 3rem auto 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 20px 60px rgba(0,0,0,0.12); }
   .mockup-bar { background: #2a2a2a; padding: 0.75rem 1rem; display: flex; align-items: center; gap: 8px; }
   .dot { width: 12px; height: 12px; border-radius: 50%; }
@@ -56,7 +53,7 @@
   .sidebar-logo { padding: 0 1rem 1.5rem; display: flex; align-items: center; gap: 8px; }
   .sidebar-logo-icon { width: 28px; height: 28px; background: var(--blue); border-radius: 6px; }
   .sidebar-logo-text { color: white; font-weight: 700; font-size: 0.9rem; }
-  .sidebar-item { padding: 0.5rem 1rem; font-size: 0.8rem; color: #9ca3af; display: flex; align-items: center; gap: 8px; cursor: default; }
+  .sidebar-item { padding: 0.5rem 1rem; font-size: 0.8rem; color: #9ca3af; display: flex; align-items: center; gap: 8px; }
   .sidebar-item.active { background: rgba(24,95,165,0.2); color: #60a5fa; border-right: 2px solid #60a5fa; }
   .sidebar-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: 0.6; }
   .main-mock { padding: 1.5rem; }
@@ -83,54 +80,50 @@
   .badge-red { background: rgba(239,68,68,0.2); color: #f87171; }
   .badge-green { background: rgba(52,211,153,0.2); color: #34d399; }
 
-  /* FEATURES */
   .section { padding: 5rem 2rem; }
   .section-center { text-align: center; }
   .section-label { font-size: 0.8rem; font-weight: 700; color: var(--blue); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
   .section h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 800; max-width: 600px; margin: 0 auto 1rem; }
   .section p.lead { color: var(--text-muted); max-width: 500px; margin: 0 auto 3rem; font-size: 1.05rem; }
-  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
   .feature-card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
   .feature-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.25rem; }
   .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem; }
   .feature-card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
+  .feature-card .badge-new { display: inline-block; background: var(--blue-light); color: var(--blue-dark); font-size: 0.65rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 4px; margin-left: 0.5rem; vertical-align: middle; }
   .icon-blue { background: var(--blue-light); }
   .icon-green { background: var(--green-light); }
   .icon-amber { background: var(--amber-light); }
 
-  /* PRICING */
   .pricing-section { background: var(--bg-secondary); padding: 5rem 2rem; }
   .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto; }
-  .pricing-card { background: white; border: 1.5px solid var(--border); border-radius: 16px; padding: 2rem; }
-  .pricing-card.featured { border-color: var(--blue); position: relative; }
+  .pricing-card { background: white; border: 1.5px solid var(--border); border-radius: 16px; padding: 2rem; position: relative; }
+  .pricing-card.featured { border-color: var(--blue); }
   .pricing-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--blue); color: white; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 1rem; border-radius: 20px; white-space: nowrap; }
   .pricing-name { font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; }
   .pricing-price { font-size: 2.5rem; font-weight: 800; color: var(--blue); line-height: 1; margin-bottom: 0.25rem; }
   .pricing-price span { font-size: 1rem; font-weight: 400; color: var(--text-muted); }
   .pricing-renewal { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
   .pricing-features { list-style: none; margin-bottom: 2rem; }
-  .pricing-features li { padding: 0.4rem 0; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; color: var(--text); }
-  .pricing-features li::before { content: '✓'; color: var(--green); font-weight: 700; }
+  .pricing-features li { padding: 0.4rem 0; font-size: 0.9rem; display: flex; align-items: flex-start; gap: 0.5rem; color: var(--text); }
+  .pricing-features li::before { content: '✓'; color: var(--green); font-weight: 700; margin-top: 0.1rem; flex-shrink: 0; }
   .pricing-cta { display: block; text-align: center; padding: 0.85rem; border-radius: 10px; font-weight: 700; transition: all 0.2s; }
   .pricing-cta-primary { background: var(--blue); color: white; }
   .pricing-cta-primary:hover { background: var(--blue-dark); color: white; }
   .pricing-cta-secondary { background: var(--bg-secondary); color: var(--text); border: 1px solid var(--border); }
   .pricing-cta-secondary:hover { border-color: var(--blue); color: var(--blue); }
 
-  /* HOW IT WORKS */
   .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto; }
   .step { text-align: center; }
   .step-num { width: 48px; height: 48px; border-radius: 50%; background: var(--blue); color: white; font-weight: 800; font-size: 1.25rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; }
   .step h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
   .step p { color: var(--text-muted); font-size: 0.9rem; }
 
-  /* FAQ */
   .faq-list { max-width: 700px; margin: 0 auto; }
   .faq-item { border-bottom: 1px solid var(--border); padding: 1.25rem 0; }
   .faq-item h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
   .faq-item p { color: var(--text-muted); font-size: 0.9rem; }
 
-  /* CTA FINALE */
   .cta-section { background: var(--blue); color: white; text-align: center; padding: 5rem 2rem; }
   .cta-section h2 { font-size: 2rem; font-weight: 800; margin-bottom: 1rem; }
   .cta-section p { opacity: 0.85; margin-bottom: 2rem; font-size: 1.05rem; }
@@ -139,9 +132,13 @@
   .contact-info { margin-top: 2rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
   .contact-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; opacity: 0.9; }
 
-  /* FOOTER */
   footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.85rem; }
   footer strong { color: var(--text); }
+
+  .compliance-banner { background: #EAF3DE; border: 1px solid #C0DD97; border-radius: 12px; padding: 1.25rem 1.5rem; max-width: 700px; margin: 0 auto 3rem; display: flex; align-items: flex-start; gap: 1rem; }
+  .compliance-banner .icon { font-size: 1.5rem; flex-shrink: 0; }
+  .compliance-banner h4 { font-weight: 700; color: #3B6D11; margin-bottom: 0.25rem; }
+  .compliance-banner p { font-size: 0.9rem; color: #5F5E5A; }
 
   @media (max-width: 600px) {
     .mockup-body { grid-template-columns: 1fr; }
@@ -163,11 +160,10 @@
   <a href="#contatti" class="nav-cta">Richiedi info</a>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-badge">Gestionale desktop professionale</div>
   <h1>Il software che <span>semplifica</span> la tua attività</h1>
-  <p>Magazzino, fatturazione, clienti e cassa in un'unica app. Funziona senza internet, i tuoi dati restano sul tuo PC.</p>
+  <p>Magazzino, fatturazione elettronica, cassa e molto altro. Funziona senza internet, i tuoi dati restano sul tuo PC.</p>
   <div class="hero-buttons">
     <a href="#contatti" class="btn-primary">Richiedi una demo gratuita</a>
     <a href="#funzionalita" class="btn-secondary">Scopri le funzionalità</a>
@@ -192,6 +188,7 @@
         <div class="sidebar-item"><div class="sidebar-dot"></div> Fatture</div>
         <div class="sidebar-item"><div class="sidebar-dot"></div> Cassa</div>
         <div class="sidebar-item"><div class="sidebar-dot"></div> Scadenzario</div>
+        <div class="sidebar-item"><div class="sidebar-dot"></div> Impostazioni</div>
       </div>
       <div class="main-mock">
         <div class="mock-header">
@@ -202,7 +199,7 @@
           <div class="mock-card"><div class="mock-card-label">Clienti</div><div class="mock-card-value blue">48</div></div>
           <div class="mock-card"><div class="mock-card-label">Ricambi</div><div class="mock-card-value">312</div></div>
           <div class="mock-card"><div class="mock-card-label">Fatturato mese</div><div class="mock-card-value green">8.420 €</div></div>
-          <div class="mock-card"><div class="mock-card-label">Sotto scorta</div><div class="mock-card-value amber">3</div></div>
+          <div class="mock-card"><div class="mock-card-label">Scontrini oggi</div><div class="mock-card-value amber">7</div></div>
         </div>
         <div class="mock-table">
           <div class="mock-table-header">
@@ -235,22 +232,29 @@
   </div>
 </section>
 
-<!-- FUNZIONALITA -->
 <section class="section section-center" id="funzionalita">
   <div class="section-label">Funzionalità</div>
   <h2>Tutto quello che ti serve, in un solo programma</h2>
   <p class="lead">Pensato per officine, ricambisti, farmacie e negozi. Adattabile alla tua attività.</p>
 
+  <div class="compliance-banner">
+    <div class="icon">✅</div>
+    <div>
+      <h4>Fatturazione elettronica conforme alla normativa italiana</h4>
+      <p>FormikaDesk genera file XML FatturaPA 1.2 pronti per essere caricati sul portale gratuito dell'Agenzia delle Entrate (SDI). Il piano Pro include l'invio automatico tramite intermediario accreditato.</p>
+    </div>
+  </div>
+
   <div class="features-grid">
     <div class="feature-card">
       <div class="feature-icon icon-blue">📦</div>
       <h3>Magazzino intelligente</h3>
-      <p>Tieni traccia di ogni ricambio con codice interno e OEM. Alert automatici quando la scorta scende sotto il minimo. Scanner barcode integrato.</p>
+      <p>Tieni traccia di ogni prodotto con codice interno e OEM. Alert automatici sotto scorta minima. Scanner barcode integrato per carico e scarico rapido.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon icon-green">🧾</div>
-      <h3>Fatturazione rapida</h3>
-      <p>Crea fatture in pochi secondi. Numero progressivo automatico, calcolo IVA, stampa PDF professionale. Gestisci bozze, confermate e pagate.</p>
+      <h3>Fatturazione elettronica <span class="badge-new">FatturaPA</span></h3>
+      <p>Crea fatture in pochi secondi. Genera automaticamente l'XML FatturaPA 1.2 per l'invio all'SDI. Stampa PDF professionale con intestazione personalizzata.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon icon-amber">🏪</div>
@@ -258,39 +262,38 @@
       <p>Modalità cassa per vendite rapide. Scansiona il codice, scegli il metodo di pagamento e stampa lo scontrino termico in formato 80mm.</p>
     </div>
     <div class="feature-card">
-      <div class="feature-icon icon-blue">👥</div>
+      <div class="feature-icon icon-blue">💳</div>
+      <h3>Riconciliazione pagamenti <span class="badge-new">Nuovo</span></h3>
+      <p>Quando segni una fattura come pagata, registra data, metodo (bonifico/contanti/carta) e riferimento. I dati appaiono automaticamente nella stampa PDF.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon icon-green">👥</div>
       <h3>Clienti e veicoli</h3>
       <p>Anagrafica completa con storico veicoli. Targa, marca, modello, anno e chilometraggio per ogni mezzo associato al cliente.</p>
     </div>
     <div class="feature-card">
-      <div class="feature-icon icon-green">📅</div>
+      <div class="feature-icon icon-amber">📅</div>
       <h3>Scadenzario pagamenti</h3>
       <p>Tieni d'occhio le fatture da incassare. Badge colorati per urgenza: verde oltre 30 giorni, giallo entro 30, rosso se scaduta.</p>
     </div>
     <div class="feature-card">
-      <div class="feature-icon icon-amber">📊</div>
+      <div class="feature-icon icon-blue">📊</div>
       <h3>Report mensile</h3>
       <p>Riepilogo completo di entrate, uscite e saldo per ogni mese. Esportabile in PDF e stampabile per il commercialista.</p>
     </div>
     <div class="feature-card">
-      <div class="feature-icon icon-blue">🔒</div>
-      <h3>I tuoi dati restano tuoi</h3>
-      <p>Nessun cloud, nessun abbonamento nascosto. Il database è sul tuo PC. Backup e ripristino con un click. Funziona anche senza internet.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon icon-green">🔍</div>
-      <h3>Ricerca globale</h3>
-      <p>Premi Ctrl+K e cerca qualsiasi cosa: clienti, ricambi, fatture. Risultati istantanei con navigazione diretta alla sezione.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon icon-amber">🚚</div>
+      <div class="feature-icon icon-green">🚚</div>
       <h3>Ordini ai fornitori</h3>
-      <p>Genera ordini di acquisto quando i ricambi scarseggiano. Al ricevimento della merce, la giacenza si aggiorna automaticamente.</p>
+      <p>Genera ordini di acquisto quando i prodotti scarseggiano. Al ricevimento della merce, la giacenza si aggiorna automaticamente.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon icon-amber">🔒</div>
+      <h3>I tuoi dati restano tuoi</h3>
+      <p>Nessun cloud obbligatorio. Il database è sul tuo PC. Backup e ripristino con un click. Funziona anche senza internet.</p>
     </div>
   </div>
 </section>
 
-<!-- COME FUNZIONA -->
 <section class="section section-center" style="background: var(--bg-secondary);">
   <div class="section-label">Come funziona</div>
   <h2>Attivo in meno di 10 minuti</h2>
@@ -308,18 +311,17 @@
     </div>
     <div class="step">
       <div class="step-num">3</div>
-      <h3>Attiva la licenza</h3>
-      <p>Mi mandi il codice del tuo PC, ti mando la chiave di attivazione. Operazione di un minuto.</p>
+      <h3>Configura</h3>
+      <p>Inserisci i dati della tua azienda nelle Impostazioni. Sei pronto a emettere fatture elettroniche.</p>
     </div>
     <div class="step">
       <div class="step-num">4</div>
       <h3>Inizia a usarlo</h3>
-      <p>Inserisci i tuoi prodotti, clienti e fornitori. Il gestionale è tuo per sempre.</p>
+      <p>Inserisci prodotti, clienti e fornitori. Il gestionale è tuo per sempre.</p>
     </div>
   </div>
 </section>
 
-<!-- PREZZI -->
 <section class="pricing-section" id="prezzi">
   <div style="text-align: center; margin-bottom: 3rem;">
     <div class="section-label">Prezzi</div>
@@ -329,11 +331,12 @@
   <div class="pricing-grid">
     <div class="pricing-card">
       <div class="pricing-name">Licenza Base</div>
-      <div class="pricing-price">249€ <span>una tantum</span></div>
-      <div class="pricing-renewal">+ 79€/anno dal secondo anno per aggiornamenti (opzionale)</div>
+      <div class="pricing-price">349€ <span>una tantum</span></div>
+      <div class="pricing-renewal">+ 99€/anno dal secondo anno per aggiornamenti (opzionale)</div>
       <ul class="pricing-features">
         <li>Licenza permanente su 1 PC</li>
         <li>Tutte le funzionalità incluse</li>
+        <li>Generazione XML FatturaPA + export manuale sul portale AdE</li>
         <li>Aggiornamenti gratuiti per 1 anno</li>
         <li>Supporto via email</li>
         <li>Backup e ripristino dati</li>
@@ -343,14 +346,15 @@
     <div class="pricing-card featured">
       <div class="pricing-badge">Più scelto</div>
       <div class="pricing-name">Licenza + Supporto</div>
-      <div class="pricing-price">349€ <span>una tantum</span></div>
-      <div class="pricing-renewal">+ 79€/anno dal secondo anno per aggiornamenti (opzionale)</div>
+      <div class="pricing-price">499€ <span>una tantum</span></div>
+      <div class="pricing-renewal">+ 99€/anno dal secondo anno per aggiornamenti (opzionale)</div>
       <ul class="pricing-features">
         <li>Tutto della Licenza Base</li>
         <li>Installazione remota inclusa</li>
         <li>Supporto WhatsApp prioritario 1 anno</li>
         <li>Formazione di 1 ora in videocall</li>
-        <li>Personalizzazione voci di magazzino</li>
+        <li>Personalizzazione per la tua attività</li>
+        <li>Invio automatico SDI tramite API <em style="color: var(--text-muted); font-size: 0.85rem;">(coming soon)</em></li>
       </ul>
       <a href="https://wa.me/393204562042?text=Ciao, sono interessato a FormikaDesk - Licenza con Supporto" class="pricing-cta pricing-cta-primary">Inizia subito</a>
     </div>
@@ -360,7 +364,6 @@
   </p>
 </section>
 
-<!-- FAQ -->
 <section class="section" id="faq">
   <div style="text-align: center; margin-bottom: 3rem;">
     <div class="section-label">Domande frequenti</div>
@@ -368,8 +371,16 @@
   </div>
   <div class="faq-list">
     <div class="faq-item">
+      <h3>La fatturazione è conforme alla normativa italiana?</h3>
+      <p>Sì. FormikaDesk genera file XML FatturaPA 1.2, il formato ufficiale richiesto dall'Agenzia delle Entrate. Il file si carica gratuitamente sul portale ivaservizi.agenziaentrate.gov.it.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Devo pagare per inviare fatture elettroniche?</h3>
+      <p>No. Il portale SDI dell'Agenzia delle Entrate è gratuito. FormikaDesk genera il file XML, tu lo carichi sul portale. Il piano con Supporto includerà presto l'invio automatico tramite intermediario accreditato.</p>
+    </div>
+    <div class="faq-item">
       <h3>Funziona senza internet?</h3>
-      <p>Sì, completamente. Il database è sul tuo PC. Non ti serve la connessione per usarlo. Internet serve solo per installare gli aggiornamenti quando vuoi.</p>
+      <p>Sì, completamente. Il database è sul tuo PC. Non ti serve la connessione per usarlo. Internet serve solo per installare gli aggiornamenti e per caricare le fatture sul portale AdE.</p>
     </div>
     <div class="faq-item">
       <h3>Posso provarlo prima di comprare?</h3>
@@ -385,7 +396,7 @@
     </div>
     <div class="faq-item">
       <h3>È compatibile con Windows?</h3>
-      <p>Sì, compatibile con Windows 10 e 11. Disponibile anche per Linux. La versione macOS è in arrivo.</p>
+      <p>Sì, compatibile con Windows 10 e 11. Disponibile anche per Linux e macOS.</p>
     </div>
     <div class="faq-item">
       <h3>Posso usarlo con la pistola barcode?</h3>
@@ -394,7 +405,6 @@
   </div>
 </section>
 
-<!-- CTA FINALE -->
 <section class="cta-section" id="contatti">
   <h2>Pronto a semplificare la tua attività?</h2>
   <p>Scrivimi per una demo gratuita senza impegno. Ti rispondo entro poche ore.</p>
@@ -413,7 +423,7 @@
 
 <footer>
   <p>© 2026 <strong>FormikaDesk</strong> — Sviluppato da Alessandro Formica · Caltanissetta, Sicilia</p>
-  <p style="margin-top: 0.5rem;">Software gestionale desktop per attività commerciali</p>
+  <p style="margin-top: 0.5rem;">Software gestionale desktop per attività commerciali · Fatturazione elettronica FatturaPA 1.2</p>
 </footer>
 
 </body>
